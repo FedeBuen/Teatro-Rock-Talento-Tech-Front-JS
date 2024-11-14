@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #CFE7E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size: 3em;
+    color: #408082;
+}
+h2 {
+    font-size: 2rem;
+    color: #408082;
+    text-align: center;
+}
+.logo {
+    width: 3em;
+    height: 3em;
+}
+.header {
+    width: 100%;
+    height: 4em;
+    padding:10px 20px;
+    background-color: #408082;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top:0;
+    z-index:1005;
+}
+.nav {
+    width: 80%;
+    height: 2em;
+}
+.barnav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    width: 20%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.linknav {
+    color: black;
+    text-decoration: none;
+}
+.linknav:hover {
+    color: white;
+    font-size: 1.25em;
+    transition: 0.5s;
+}
+main {
+    width: 100%;
+}
+.banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image:url("../assets/img/concert-3387324_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h1, .banner h2 {
+    margin: 0.5em 0;
+    position: absolute;
+    top: 3em; 
+}
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    padding: 1.5em;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center; 
+}
+.banner-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #CFE7E8;
+    margin: 0; 
+}
+.article {
+    min-height: 100vh;
+    background-color: #CFE7E8;
+}
+.footer {
+    width: 100%;
+    height: 4em;
+    padding:10px 20px;
+    background-color: #408082;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;;
+    align-items: center;
+}
+.conciertos { 
+    padding:20px;
+    margin:0 auto;
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.tarjeta {
+    text-align: center;
+    padding: 10px;
+    box-shadow: -10px 0px 35px 12px rgba(0, 0, 0, 0.198);
+    border-radius: 5px;
+}
+.flyer {
+    width: 14em;
+}
+.flyer:hover {
+    width: 15em;
+    transition: 1s;
+}
+.btnComprar {
+    padding: 0.5em;
+    color: #408082;
+    
+}
+.btnComprar {
+    color: #408082;;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.btnComprar:hover {
+    background-color:#408082;
+    color: #CFE7E8;
+}
+.fa-whatsapp{
+    font-size: 3em;
+    color:rgb(44, 181, 44);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #408082;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divfooter {
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .linknav {
+        font-size: .8em;
+    }
+    .conciertos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner-content p {
+        font-size: 0.8em;
+    }
+    .btnComprar {
+        padding: 0.5em;
+    }
+}
