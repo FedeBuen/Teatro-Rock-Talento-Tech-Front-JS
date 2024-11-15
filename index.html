@@ -19,10 +19,10 @@
         </a>
         <nav class="nav">
             <ul class="barnav">
-                <li class="menu"><a class="linknav" href="#">Galeria</a></li>
-                <li class="menu"><a class="linknav" href="#">Entradas</a></li>
-                <li class="menu"><a class="linknav" href="#">Contacto</a></li>
-                <li class="menu"><a class="linknav" href="#">Nosotros</a></li>
+                <li class="menu"><a class="linknav" href="#">Inicio</a></li>
+                <li class="menu"><a class="linknav" href="#conciertos">Conciertos</a></li>
+                <li class="menu"><a class="linknav" href="#contacto">Contacto</a></li>
+                <li class="menu"><a class="linknav" href="./pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -35,39 +35,63 @@
                 <p>Bienvenidos a Teatro Rock, el lugar donde la energía del rock cobra vida. Disfruta de conciertos épicos y vive la música como nunca antes.</p>
             </div>
         </section>
-        <section class="article">
+        <section id="conciertos" class="article">
             <h2>Proximos Conciertos</h2>
             <div class="conciertos">
                 <div class="tarjeta">
                     <img class="flyer" src="./assets/img/tarja.jpeg" alt="Tarja">
                     <h3>Tarja Turunen</h3>
-                    <h4>Teatro Rock</h4>
                     <h4>16 de Mayo 2025</h4>
-                    <button class="btnComprar">Adquirir Entradas</button>
+                    <a href="./pages/entradas.html">
+                        <button class="btnComprar">Adquirir Entradas</button>
+                    </a>
                 </div>
                 <div class="tarjeta">
                     <img class="flyer" src="./assets/img/stratovarius.jpeg" alt="Stratovarius">
                     <h3>Stratovarius</h3>
-                    <h4>Teatro Rock</h4>
                     <h4>17 de Abril 2025</h4>
-                    <button class="btnComprar">Adquirir Entradas</button>
+                    <a href="./pages/entradas.html">
+                        <button class="btnComprar">Adquirir Entradas</button>
+                    </a>
                 </div>
                 <div class="tarjeta">
                     <img class="flyer" src="./assets/img/beyond.jpeg" alt="Beyond the Black">
                     <h3>Beyond the Black</h3>
-                    <h4>Teatro Rock</h4>
                     <h4>2 de Mayo 2025</h4>
-                    <button class="btnComprar">Adquirir Entradas</button>
+                    <a href="./pages/entradas.html">
+                        <button class="btnComprar">Adquirir Entradas</button>
+                    </a>
                 </div>
                 <div class="tarjeta">
                     <img class="flyer" src="./assets/img/sonata.jpeg" alt="Sonata Artica">
                     <h3>Sonata Artica</h3>
-                    <h4>Teatro Rock</h4>
                     <h4>4 de Mayo 2025</h4>
-                    <button class="btnComprar">Adquirir Entradas</button>
+                    <a href="./pages/entradas.html">
+                        <button class="btnComprar">Adquirir Entradas</button>
+                    </a>
                 </div>
             </div>       
         </section>   
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto-info">
+                <p><strong>Dirección:</strong> Avda. Acacia 22 , Ciudad del Rock</p>
+                <p><strong>Teléfono:</strong> +54 3072 3072</p>
+                <p><strong>Email:</strong> info@teatrorock.com</p>
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="newsletter">
+                    <p>Suscríbete para recibir noticias de los próximos conciertos:</p>
+                    <form action="#" method="POST" class="form-suscripcion">
+                        <input type="email" name="email" placeholder="Introduce tu email" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
